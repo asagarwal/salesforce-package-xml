@@ -1,0 +1,63 @@
+<?xml version=1.0 encoding=UTF-8 standalone=yes?>
+<Package xmlns=http://soap.sforce.com/2006/04/metadata>
+<!-- 
+     1. This template contains all the metadata types that is required to extract the complete
+        the permission set settings as some of the permission set settings are only extracted if the corresponding 
+        metadata type is a part of the package.xml. 
+
+     2. This is based on the details specified at URL 
+        https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_permissionset.htm
+
+     3. Some of these metadata types does not work with wildcard asterisk (*). A comment has
+        been added to such metadata types. Replace asterisk with the API name of the
+        components that needs to be retrieved      
+-->
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+<!-- Wildcard character asterisk (*) does not work on CustomField. This needs to be specified explicitly -->    
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>  
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExternalDataSource</name>
+    </types>    
+<!-- "Flow" didn't work for Permission Set. No Flow Related Persmission was visible in the Permission Set XML -->
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+<!-- Wildcard character asterisk (*) does not work on RecordType. This needs to be specified explicitly -->    
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>53.0</version>
+</Package>
