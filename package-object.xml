@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<!-- 
+     1. When retrieving an object using package.xml, the following components are retrieved 
+        along with the object
+        1. object definition
+        2. Fields
+        3. Field Sets 
+        4. List views 
+        5. Compact Layouts
+        6. Validation Rules
+        7. Lookup Filters
+        8. Search Layouts
+        9. Record Types
+        10. Web Links
+
+     2. Other components need to be extracted explicitly. This mainly includes
+        1. Tab
+        2. Page Layouts
+        3. Lightning Page Layouts
+        4. Quick Actions
+
+     3. Use this package.xml file to retrieve all important components related to an object   
+-->
+    <types>
+        <members>AA_Flight__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>AA_Flight__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>AA_Flight__c-AA Flight Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>AA_Flight_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>AA_Flight__c.Create_Flight_Note_Action</members>
+        <name>QuickAction</name>
+    </types>
+    <version>53.0</version>
+</Package>

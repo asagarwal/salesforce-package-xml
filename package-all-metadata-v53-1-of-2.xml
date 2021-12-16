@@ -1,0 +1,2072 @@
+<?xml version=1.0 encoding=UTF-8 standalone=yes?>
+<Package xmlns=http://soap.sforce.com/2006/04/metadata>
+<!-- 
+    This is file 1-of-2. Use the files 1-of-2 & 2-of-2 to split the retreival of metadata in two files.
+    This is required as Salesforce has limit of 10,000 files that can be extracted at 
+    one time.
+
+    You may need to adjust the metadata types in file 1-of-2 & file 2-of-2 depending on
+    you org to stay within the limit of 10,000 files. To find out the metadata types commented 
+    in this file and moved to file 2-of-2 search for the string "2-of-2"
+
+     This file lists all the metadata as per Metadata Coverage Report at URL 
+     https://developer.salesforce.com/docs/metadata-coverage/53. You can use this
+     file to extract all the metadata from your Salesforce Org to take a backup. Please note
+     that following changes were made in the file
+
+     1. <component>Settings block of code were commented as all settings can be retrieved
+        from the block of <name>Settings</name>
+
+     2. Block of code for <name>Settings</name> was added towards the end of the file as 
+        this metadata type did not some from the metadata coverage report
+
+     3. Some lines were commented because of getting the error 
+        "Missing metadata type definition in registry for id '<metadatacomponenttype>'"
+        when trying to retrieve the metadata. 
+
+     4. For Metadata type CustomObject, add the name of the standard objects that are in use
+        in your org as standard objects are not retrieved by using '*' 
+        
+     5. Some objects cannot be retreived using wildcard characters. A comment has been added
+        on top of such metadata types. Just search for the keyword "wildcard" to identify all such
+        metadata types and add the specific API names the components that you want to retrieve
+-->     
+    <types>
+        <members>*</members>
+        <name>AccountForecastSettings</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AccountInsightsSettings</name>
+    </types> 
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AccountIntelligenceSettings</name>
+    </types>
+-->     
+    <types>
+        <members>*</members>
+        <name>AccountRelationshipShareRule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AccountSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AcctMgrTargetSettings</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ActionLinkGroupTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ActionPlanTemplate</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ActionsSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ActivitiesSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AddressSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>AdvAccountForecastSet</name>
+    </types>
+<!-- ** Commented because of Error "Missing metadata type definition in registry for id 'advacctforecastdimsource'"
+    <types>
+        <members>*</members>
+        <name>AdvAcctForecastDimSource</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AdvAcctForecastPeriodGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AIApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AIApplicationConfig</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AIReplyRecommendationsSettings</name>
+    </types>
+-->    
+<!-- Wildcard Characters will not work for the following metadata type AnalyticSnapshot
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>AnalyticSnapshot</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AnalyticsSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AnimationRule</name>
+    </types>
+<!-- ** ApexClass also impacts the XML file that will be extracted for the Profiles -->    
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexEmailNotifications</name>
+    </types>
+<!-- ** ApexPage also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ApexSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AppAnalyticsSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AppExperienceSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ApplicationRecordTypeConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AppMenu</name>
+    </types>
+<!-- ** Commented because of getting error "Missing metadata type definition in registry for id 'appointmentassignmentpolicy'"    
+    <types>
+        <members>*</members>
+        <name>AppointmentAssignmentPolicy</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AppointmentSchedulingPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ArchiveSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssistantContextItem</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssistantDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssistantSkillQuickAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssistantSkillSobjectAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AssistantVersion</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Audience</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuthProvider</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>AutomatedContactsSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BatchCalcJobDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BatchProcessJobDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BenefitAction</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BlacklistedConsumer</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'bldgenrgyintensitycnfg'"    
+    <types>
+        <members>*</members>
+        <name>BldgEnrgyIntensityCnfg</name>
+    </types>
+-->     
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>BlockchainSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Bot</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>BotSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>BotVersion</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>BranchManagementSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>BrandingSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BriefcaseDefinition</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>BusinessHoursSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>BusinessProcessGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CallCenter</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CallCenterRoutingMap</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CallCoachingMediaProvider</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CampaignInfluenceModel</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CampaignSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>CanvasMetadata</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CareBenefitVerifySettings</name>
+    </types>
+-->    
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'carelimittype'"
+    <types>
+        <members>*</members>
+        <name>CareLimitType</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>CareProviderSearchConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CareRequestConfiguration</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CareSystemFieldMapping</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CaseSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>CaseSubjectParticle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Certificate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ChannelLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ChannelObjectLinkingRule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ChatterAnswersSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ChatterEmailsMDSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ChatterExtension</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ChatterSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>CleanDataService</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CMSConnectSource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CommandAction</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CommerceSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CommunitiesSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CommunityTemplateDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CommunityThemeDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CompactLayout</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CompanySettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ConnectedApp</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ConnectedAppSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ConnectedSystem</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ContentSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ContractSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings    
+    <types>
+        <members>*</members>
+        <name>ConversationalIntelligenceSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ConversationVendorInfo</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CorsWhitelistOrigin</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CspTrustedSite</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CurrencySettings</name>
+    </types>
+-->
+<!-- ** CustomApplication also impacts the XML file that will be extracted for the Profiles -->    
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplicationComponent</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>CustomerDataPlatformSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>CustomFeedFilter</name>
+    </types> 
+<!-- Wildcard Characters will not work for the following metadata type CustomField
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+<!-- ** CustomField also impacts the XML file that will be extracted for the Profiles -->         
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomHelpMenuSection</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomIndex</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type CustomLabels
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm 
+     
+     (Though the wild card for Custom Label worked when I tested on Sun 05-Dec-2021) -->
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+<!-- ** CustomMetadata also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomNotificationType</name>
+    </types>
+<!-- ** CustomObject also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <members>Campaign</members>        
+        <members>CampaignMember</members>        
+        <members>Lead</members>        
+        <members>Account</members>
+        <members>Contact</members>       
+        <members>Case</members>        
+        <members>Opportunity</members>        
+        <members>Event</members>        
+        <members>Task</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomPageWebLink</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomSite</name>
+    </types>
+<!-- ** CustomTab also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'customvalue'"    
+    <types>
+        <members>*</members>
+        <name>CustomValue</name>
+    </types>
+-->   
+<!-- Wildcard Characters will not work for the following metadata type Dashboard
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DashboardFolder</name>
+    </types>
+<!-- ** DataCategoryGroup also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>DataCategoryGroup</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataConnectorS3</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>DataDotComSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>DataMapping</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataMappingSchema</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataSource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataSourceObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DataStreamDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DecisionTable</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DecisionTableDatasetLink</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DelegateGroup</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>DeploymentSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>DevHubSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>DiscoveryAIModel</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DiscoveryGoal</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>DiscoverySettings</name>
+    </types>
+-->    
+<!-- Wildcard Characters will not work for the following metadata type Document
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>Document</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>DocumentChecklistSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>DocumentFolder</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DocumentGenerationSetting</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DocumentType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>DuplicateRule</name>
+    </types>
+<!-- ** Covered in Settings    
+    <types>
+        <members>*</members>
+        <name>EACSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>EclairGeoData</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EinsteinAgentSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EinsteinAssistantSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EinsteinDocumentCaptureSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmailAdministrationSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>EmailFolder</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmailIntegrationSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>EmailServicesFunction</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type EmailTemplate
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>EmailTemplate</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'customvalue'"    
+    <types>
+        <members>*</members>
+        <name>EmailTemplateFolder</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmailTemplateSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceBranding</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceFlowConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceLiveAgent</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmbeddedServiceMenuSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmployeeFieldAccessSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EmployeeUserSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EnhancedNotesSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>EntitlementProcess</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EntitlementSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>EntitlementTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EntityImplements</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>EscalationRules</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EssentialsSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>EventSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ExperienceBundle</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ExperienceBundleSettings</name>
+    </types>
+-->  
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'externalaimodel'"  
+    <types>
+        <members>*</members>
+        <name>ExternalAIModel</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ExternalDataConnector</name>
+    </types>
+<!-- ** ExternalDataSource also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>ExternalDataSource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ExternalServiceRegistration</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ExternalServicesSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>FeatureParameterBoolean</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FeatureParameterDate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FeatureParameterInteger</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FederationDataMappingUsage</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'externalaimodel'"    
+    <types>
+        <members>*</members>
+        <name>FieldRestrictionRule</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>FieldServiceMobileExtension</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>FieldServiceSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>FieldSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FieldSrcTrgtRelationship</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>FilesConnectSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>FileUploadAndDownloadSecuritySettings</name>
+    </types>
+-->    
+<!-- ** FlexiPage also impacts the XML file that will be extracted for the Profiles -->    
+    <types>
+        <members>*</members>
+        <name>FlexiPage</name>
+    </types>
+<!-- ** Flow also impacts the XML file that will be extracted for the Profiles -->        
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowCategory</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>FlowSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ForecastingObjectListSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ForecastingSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ForecastingSourceDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ForecastingTypeSource</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>FormulaSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>FunctionReference</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GatewayProviderPaymentMethodType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSetTranslation</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>GoogleAppsSettings</name>
+    </types>
+-->    
+<!-- Group moved to file 2-of-2 to reduce the no. of files
+    <types>
+        <members>*</members>
+        <name>Group</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>HighVelocitySalesSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>HomePageComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Icon</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>IdeasSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>IframeWhiteListUrlSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>InboundCertificate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>InboundNetworkConnection</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Index</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>IndustriesLoyaltySettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>IndustriesManufacturingSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings    
+    <types>
+        <members>*</members>
+        <name>IndustriesSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>InstalledPackage</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>InventorySettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>InvocableActionSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>IoTSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>IPAddressRange</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>KeywordList</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>KnowledgeSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LanguageSettings</name>
+    </types>
+-->    
+<!-- ** Layout also impacts the XML file that will be extracted for the Profiles -->    
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LeadConfigSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LeadConvertSettings</name>
+    </types>
+-->    
+<!-- Wildcard Characters will not work for the following metadata type Letterhead
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm 
+     
+     (Though the Letterhead worked with wildcard character when I tested on Sun 05-Dec-2021 -->
+    <types>
+        <members>*</members>
+        <name>Letterhead</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningBolt</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LightningExperienceSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>LightningExperienceTheme</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningMessageChannel</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningOnboardingConfig</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type ListView
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>ListView</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LiveAgentSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>LiveChatAgentConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LiveChatButton</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LiveChatDeployment</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LiveChatSensitiveDataRule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>LiveMessageSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>MacroSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings    
+    <types>
+        <members>*</members>
+        <name>MailMergeSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ManagedContentType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ManagedTopics</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>MapsAndLocationSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>MatchingRules</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>MediaAdSalesSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>MilestoneType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MktCalcInsightObjectDef</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MktDataTranObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MLDataDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MlDomain</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'mlpredictiondefinition'"    
+    <types>
+        <members>*</members>
+        <name>MLPredictionDefinition</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>MLRecommendationDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MobileApplicationDetail</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>MobileSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ModerationRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MutingPermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>MyDomainDiscoverableLogin</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>MyDomainSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>NamedCredential</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>NameSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>NavigationMenu</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>NetworkBranding</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>NotificationsSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>NotificationTypeConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OauthCustomScope</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ObjectHierarchyRelationship</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ObjectLinkingSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ObjectSourceTargetMap</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OcrSampleDocument</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>OcrTemplate</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OmniChannelSettings</name>
+    </types>
+-->
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'omniinteractionaccessconfig'"
+    <types>
+        <members>*</members>
+        <name>OmniInteractionAccessConfig</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OnlineSalesSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OpportunityInsightsSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OpportunityScoreSettings</name>
+    </types>
+-->    
+<!-- ** Covered in Settings    
+    <types>
+        <members>*</members>
+        <name>OpportunitySettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OrderManagementSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OrderSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>OrgSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>OutboundNetworkConnection</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PardotEinsteinSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PardotSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>ParticipantRole</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PartyDataModelSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>PathAssistant</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PathAssistantSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>PaymentGatewayProvider</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSetGroup</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PicklistSettings</name>
+    </types>
+-->   
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'picklistvalue'" 
+    <types>
+        <members>*</members>
+        <name>PicklistValue</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>PlatformCachePartition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PlatformEventChannel</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PlatformEventChannelMember</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PlatformEventSubscriberConfig</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PlatformSlackSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PortalsSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>PostTemplate</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PredictionBuilderSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>PresenceDeclineReason</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PresenceUserConfig</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>PrivacySettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ProductSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Prompt</name>
+    </types>
+<!-- Queue moved to file 2-of-2 to reduce the no. of files
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>QueueRoutingConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>QuickAction</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>QuickTextSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>QuoteSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>RealTimeEventSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>RecommendationBuilderSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>RecommendationStrategy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordActionDeployment</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>RecordPageSettings</name>
+    </types>
+-->    
+<!-- ** RecordType also impacts the XML file that will be extracted for the Profiles -->    
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RedirectWhitelistUrl</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'picklistvalue'"
+    <types>
+        <members>*</members>
+        <name>RelatedRecordAssocCriteria</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type CustomLabels
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm  -->     
+    <types>
+        <members>*</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ReportFolder</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RestrictionRule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>RetailExecutionSettings</name>
+    </types>
+-->  
+<!-- Role moved to file 2-of-2 to reduce the no. of files  
+    <types>
+        <members>*</members>
+        <name>Role</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SalesAgreementSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SalesWorkQueueSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>SamlSsoConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SchedulingRule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SchemaSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SearchSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SecuritySettings</name>
+    </types>
+-->    
+<!-- ** Commented because of Error "Missing metadata type definition in registry for id 'picklistvalue'"
+    <types>
+        <members>*</members>
+        <name>ServiceAISetupDefinition</name>
+    </types>
+-->     
+<!-- ** Commented because of Error "Missing metadata type definition in registry for id 'serviceaisetupfield'"
+    <types>
+        <members>*</members>
+        <name>ServiceAISetupField</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ServiceChannel</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ServiceCloudVoiceSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>ServicePresenceStatus</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>ServiceSetupAssistantSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingGuestRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingOwnerRule</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type SharingReason
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>SharingReason</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingSet</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SharingSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>SharingTerritoryRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Skill</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SlackApp</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SocialCustomerServiceSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SocialProfileSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SourceTrackingSettings</name>
+    </types>
+-->    
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'serviceaisetupfield'"
+    <types>
+        <members>*</members>
+        <name>StandardValue</name>
+    </types>
+-->    
+<!-- Wildcard Characters will not work for the following metadata type StandardValueSet
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StandardValueSetTranslation</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'serviceaisetupfield'"    
+    <types>
+        <members>*</members>
+        <name>StnryAssetEnrgyUseCnfg</name>
+    </types>
+-->    
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SurveySettings</name>
+    </types>
+-->    
+<!-- ** Commented because of error "Missing metadata type definition in registry for id 'serviceaisetupfield'"
+    <types>
+        <members>*</members>
+        <name>SvcCatalogCategory</name>
+    </types>
+-->    
+<!-- Commented because of error "Missing metadata type definition in registry for id 'svccatalogfulfillmentflow'"
+    <types>
+        <members>*</members>
+        <name>SvcCatalogFulfillmentFlow</name>
+    </types>
+-->
+<!-- Commented because of error "Missing metadata type definition in registry for id 'svccatalogitemdef'"
+    <types>
+        <members>*</members>
+        <name>SvcCatalogItemDef</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>SynonymDictionary</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>SystemNotificationSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Territory</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2Model</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Territory2Rule</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>Territory2Settings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Territory2Type</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>TimeSheetTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>TopicsForObjects</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>TrailheadSettings</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>TransactionSecurityPolicy</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Translations</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>TrialOrgSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>UIObjectRelationConfig</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>UiPlugin</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>UserAuthCertificate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>UserCriteria</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>UserEngagementSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>UserInterfaceSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>UserManagementSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>UserProvisioningConfig</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type ValidationRule
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>ValidationRule</name>
+    </types>
+<!-- Commented because of error "Missing metadata type definition in registry for id 'vehassetenrgyusecnfg'"
+    <types>
+        <members>*</members>
+        <name>VehAssetEnrgyUseCnfg</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>ViewDefinition</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveDashboard</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveDataflow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveDataset</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveLens</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveRecipe</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveTemplateBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WaveXmd</name>
+    </types>
+<!-- Wildcard Characters will not work for the following metadata type Weblink
+     Refernece URL - https://developer.salesforce.com/docs/atlas.en-us.208.0.api_meta.meta/api_meta/meta_types_list.htm -->
+    <types>
+        <members>*</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WebStoreTemplate</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>WebToXSettings</name>
+    </types>
+-->
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>WorkDotComSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowFieldUpdate</name>
+    </types>
+<!-- Commented because of error "Missing metadata type definition in registry for id 'workflowflowaction'"
+    <types>
+        <members>*</members>
+        <name>WorkflowFlowAction</name>
+    </types>
+-->
+    <types>
+        <members>*</members>
+        <name>WorkflowKnowledgePublish</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowOutboundMessage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowSend</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>WorkflowTask</name>
+    </types>
+<!-- ** Covered in Settings
+    <types>
+        <members>*</members>
+        <name>WorkforceEngagementSettings</name>
+    </types>
+-->    
+    <types>
+        <members>*</members>
+        <name>WorkSkillRouting</name>
+    </types>
+<!-- ** The following line for Settings was added manually as it did not come from the Metadata Coverage Report -->
+    <types>
+        <members>*</members>
+        <name>Settings</name>
+    </types>    
+    <version>53.0</version>
+</Package>
