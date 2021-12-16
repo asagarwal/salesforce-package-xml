@@ -14,4 +14,6 @@ This repo contains
 
 4. **package-profile.xml** - Use this file to retreive the profile and all the other metadata types that impact the Profile XML. Some of these metdata types do not work with wildcard asterisk character. A comment has been added to such metadata types. Replace asterisk with the API name of the components that needs to be retrieved
 
-5. **package-object.xml** - Use this file to retreive an object and all the important metadata related to an object.
+5. **package-permissionset.xml** - Use this file to retreive the permission set and all the other metadata types that impact the permission set XML. Some of these metdata types do not work with wildcard asterisk character. A comment has been added to such metadata types. Replace asterisk with the API name of the components that needs to be retrieved
+
+6. **package-object.xml** - Use this file to retreive an object and all the important metadata related to an object.
